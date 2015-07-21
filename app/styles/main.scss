@@ -1,0 +1,205 @@
+//MISC
+//----
+@import "partials/core.scss";
+//COMPONENTS
+//-----------
+@import "partials/header.scss";
+@import "partials/footer.scss";
+
+#banner {
+    position: relative;
+    margin-top: 22px;
+    height: 347px;
+    background-color: #f5f5f5;
+    
+    .carousel-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+
+        .carousel-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .carousel-slider {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                .slide {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    
+    .controls {
+        position: absolute;
+        top: 40%;
+        right: 25px;
+        z-index: 1000;
+        margin: 0;
+        padding: 0;
+        width: 18px;
+        text-align: center;
+
+        li {
+            margin: 15px 0 0 0;
+            padding: 0;
+            width: 18px;
+            height: 18px;
+            background: url(../images/profite-sprite.png) no-repeat -214px -164px;
+            color: transparent;
+            font: 0/0 serif;
+            cursor: pointer;
+            zoom: 1;
+
+            &:first-child {
+               margin: 0; 
+            }
+
+            &.active {
+                background-position: -188px -164px;
+            }
+        }
+    }
+}
+
+#products {
+    margin-top: 35px;
+    .item-product-hover {
+        position: relative;
+        float: left;
+        padding-bottom: 10px;
+        width: 25%;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background: #f3f3f3;
+        }
+        & + .item-product-hover {
+            .item-product {
+                border-left: 1px solid #e1e1e1;
+            }
+        }
+        .item-product {
+            margin-top: 40px;
+            img {
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                margin-left: -85px;
+            }
+            h2 {
+                padding-top: 215px;
+                height: 42px;
+                color: #000;
+                font: bold 14px/20px Arial, sans-serif;
+            }
+            button {
+                width: 123px;
+                height: 33px;
+                border: none;
+                background: url(../images/profite-sprite.png) no-repeat 0 -215px;
+                text-indent: -9999px;
+                cursor: pointer;
+            }
+            .rating-stars {
+                margin: 12px auto;
+                width: 115px;
+                height: 17px;
+                .star {
+                    display: inline-block;
+                    width: 19px;
+                    height: 17px;
+                    background: url(../images/profite-sprite.png) no-repeat -245px -136px;
+                }
+            }
+            .price {
+                display: block;
+                height: 50px;
+                color: #000;
+                font: 12px Arial, sans-serif;
+                del {
+                    color: #717171;
+                    font: 11px Arial, sans-serif;
+                }
+            }
+        }
+        .save {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 0;
+            width: 135px;
+            border: 1px solid #c5c5c5;
+            background: #fff;
+            color: #000;
+            font: 11px Arial, sans-serif;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #banner {
+        .controls {
+            display: none;
+        }
+    }
+
+    #products {
+        .item-product-hover {
+            width: 50%;
+
+            .item-product {
+                margin-top: 0;
+
+                img {
+                    top: 0;
+                }
+
+                h2 {
+                    padding-top: 185px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    #banner {
+        height: 240px;
+    }
+
+    #products {
+        .item-product-hover {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    #banner {
+        height: 155px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #banner {
+        height: 120px;
+        margin-top: 5px;
+    }
+}
+
+
+
+
+
+
+
+

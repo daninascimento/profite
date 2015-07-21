@@ -1,0 +1,117 @@
+footer {
+    margin-top: 80px;
+    padding: 50px 0 50px;
+    width: 100%;
+    background: url(../images/footer-bg.gif);
+
+    .addresses {
+        float: left;
+        width: 66%;
+
+        .location {
+            position: relative;
+            float: left;
+            margin-left: 75px;
+            padding: 10px 0 0 55px;
+            width: 33%;
+            color: #606262;
+            font: 14px/22px Arial, sans-serif;
+
+            & + .location {
+                margin-left: 25px;
+            }
+
+            .city-icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 10px 0 0 9px;
+                    width: 39px;
+                    height: 31px;
+                    background: url(../images/profite-sprite.png) no-repeat -189px -113px;
+                    color: #000;
+                    font: bold 20px Arial, sans-serif;
+                }
+
+            strong {
+                color: #000;
+            }
+        }
+    }
+
+    .more-informations {
+        float: left;
+        width: 30%;
+        margin-left: 35px;
+
+        a {
+            display: block;
+            width: 179px;
+            height: 41px;
+            background: url(../images/profite-sprite.png) no-repeat 0 -113px;
+            text-indent: -9999px;
+        }
+
+        .consultant a {
+            margin-top: 8px;
+            background-position: 0 -164px;
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+    footer {
+        .addresses {
+            float: none;
+            margin: 0 auto;
+
+            .location {
+                margin: 0;
+            }
+        }
+
+        .more-informations {
+            float: none;
+            width: 66%;
+            margin: 30px auto 0;
+
+            .consultant {
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 650px) {
+    footer {
+        .addresses {
+            .location {
+                width: 100%;
+                
+                & + .location {
+                    margin: 30px 0 0 0;
+                }
+            }
+        }
+
+        .more-informations {
+            float: none;
+            width: 66%;
+            margin: 30px auto 0;
+
+            .consultant {
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
