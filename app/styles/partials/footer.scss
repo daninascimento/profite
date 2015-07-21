@@ -74,10 +74,8 @@ footer {
             width: 66%;
             margin: 30px auto 0;
 
-            .consultant {
-                li {
-                    display: inline-block;
-                }
+            li {
+                display: inline-block;
             }
         }
     }
@@ -91,18 +89,6 @@ footer {
                 
                 & + .location {
                     margin: 30px 0 0 0;
-                }
-            }
-        }
-
-        .more-informations {
-            float: none;
-            width: 66%;
-            margin: 30px auto 0;
-
-            .consultant {
-                li {
-                    display: inline-block;
                 }
             }
         }

@@ -1,5 +1,5 @@
 <!-- Banner -->
-<section id="banner" class="clearfix">
+<section id="banner" class="clearfix" ng-controller="CarouselCtrl">
     <div hj-carousel="slide in data.slides" hj-carousel-options="carouselOptions">
         <div class="slide" ng-style="{'background-image': 'url(' + slide.img + ')'}">
         </div>
@@ -9,92 +9,29 @@
     </ul>
 </section>
 <!-- Products -->
-<section id="products">
-    <div class="item-product-hover">
-        <div class="item-product">
-            <img src="images/sandalia-ferracini-ecologic.jpg" height="170" width="170" alt="Sandália Ferracini Ecologic" />
-            <h2>
-            Sandália Ferracini<br /> Ecologic
-          </h2>
-            <div class="rating-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
+<section id="products" class="clearfix" ng-controller="ProductsCtrl">
+    <div ng-repeat="product in products">
+        <div class="item-product-hover">
+            <div class="item-product">
+                <img ng-src="{{product.img}}" height="170" width="170" alt="{{product.name}}">
+                <h2>
+                    {{product.name}}
+                </h2>
+                <div class="rating-stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+                <span class="price">
+                <del>{{product.previous_price}}</del><br />
+                <strong>Por: <em>R$ {{product.actual_price}}</em></strong><br />
+                <em>ou <strong>até {{product.installments}}x</strong> de <strong>R$ {{product.installments_value}}</strong></em>
+              </span>
+                <button type="button">Comprar</button>
             </div>
-            <span class="price">
-            <strong>Por: <em>R$ 95,92</em></strong><br />
-            <em>ou <strong>até 4x</strong> de <strong>R$ 23,98</strong></em>
-          </span>
-            <button type="button">Comprar</button>
+            <span class="save">Economize: R$ {{product.save}}</span>
         </div>
-        <span class="save">Economize: R$ 43,98</span>
-    </div>
-    <div class="item-product-hover">
-        <div class="item-product">
-            <img src="images/chinelo-kildare.jpg" height="170" width="170" alt="Chinelo Kildare" />
-            <h2>
-            Chinelo Kildare
-          </h2>
-            <div class="rating-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-            </div>
-            <span class="price">
-            <del>De: R$ 99,90</del><br />
-            <strong>Por: <em>R$ 79,92</em></strong><br />
-            <em>ou <strong>até 3x</strong> de <strong>R$ 26,64</strong></em>
-          </span>
-            <button type="button">Comprar</button>
-        </div>
-        <span class="save">Economize: R$ 19,98</span>
-    </div>
-    <div class="item-product-hover">
-        <div class="item-product">
-            <img src="images/tenis-ferracini-week.jpg" height="170" width="170" alt="Tênis Ferracini Week" />
-            <h2>
-            Tênis Ferracini Week
-          </h2>
-            <div class="rating-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-            </div>
-            <span class="price">
-            <del>De: R$ 229,90</del><br />
-            <strong>Por: <em>R$ 183,92</em></strong><br />
-            <em>ou <strong>até 9x</strong> de <strong>R$ 20,43</strong></em>
-          </span>
-            <button type="button">Comprar</button>
-        </div>
-        <span class="save">Economize: R$ 45,98</span>
-    </div>
-    <div class="item-product-hover">
-        <div class="item-product">
-            <img src="images/tenis-democrata-fan.jpg" height="170" width="170" alt="Tênis Democrata Fan" />
-            <h2>
-            Tênis Democrata Fan
-          </h2>
-            <div class="rating-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-            </div>
-            <span class="price">
-            <del>De: R$ 219,90</del><br />
-            <strong>Por: <em>R$ 159,92</em></strong><br />
-            <em>ou <strong>até 7x</strong> de <strong>R$ 22,84</strong></em>
-          </span>
-            <button type="button">Comprar</button>
-        </div>
-        <span class="save">Economize: R$ 59,98</span>
     </div>
 </section>

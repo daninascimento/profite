@@ -1,0 +1,100 @@
+#products {
+    margin-top: 35px;
+    .item-product-hover {
+        position: relative;
+        float: left;
+        padding-bottom: 10px;
+        width: 25%;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background: #f3f3f3;
+        }
+        & + .item-product-hover {
+            .item-product {
+                border-left: 1px solid #e1e1e1;
+            }
+        }
+        .item-product {
+            margin-top: 40px;
+            img {
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                margin-left: -85px;
+            }
+            h2 {
+                padding-top: 215px;
+                height: 42px;
+                color: #000;
+                font: bold 14px/20px Arial, sans-serif;
+            }
+            button {
+                width: 123px;
+                height: 33px;
+                border: none;
+                background: url(../images/profite-sprite.png) no-repeat 0 -215px;
+                text-indent: -9999px;
+                cursor: pointer;
+            }
+            .rating-stars {
+                margin: 12px auto;
+                width: 115px;
+                height: 17px;
+                .star {
+                    display: inline-block;
+                    width: 19px;
+                    height: 17px;
+                    background: url(../images/profite-sprite.png) no-repeat -245px -136px;
+                }
+            }
+            .price {
+                display: block;
+                height: 50px;
+                color: #000;
+                font: 12px Arial, sans-serif;
+                del {
+                    color: #717171;
+                    font: 11px Arial, sans-serif;
+                }
+            }
+        }
+        .save {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 0;
+            width: 135px;
+            border: 1px solid #c5c5c5;
+            background: #fff;
+            color: #000;
+            font: 11px Arial, sans-serif;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #products {
+        .item-product-hover {
+            width: 50%;
+
+            .item-product {
+                margin-top: 0;
+
+                img {
+                    top: 0;
+                }
+
+                h2 {
+                    padding-top: 185px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    #products {
+        .item-product-hover {
+            width: 100%;
+        }
+    }
+}

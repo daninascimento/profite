@@ -1,0 +1,36 @@
+[{
+    "img": "images/sandalia-ferracini-ecologic.jpg",
+    "name": "Sandália Ferracini Ecologic",
+    "actual_price": "95,92",
+    "installments": 4,
+    "installments_value": "23,98",
+    "save": "43,98"
+},
+{
+    "img": "images/chinelo-kildare.jpg",
+    "name": "Chinelo Kildare",
+    "previous_price": "De: R$ 99,90",
+    "actual_price": "79,92",
+    "installments": 3,
+    "installments_value": "26,64",
+    "save": "19,98"
+},
+{
+    "img": "images/tenis-ferracini-week.jpg",
+    "name": "Tênis Ferracini Week",
+    "previous_price": "De: R$ 229,90",
+    "actual_price": "183,92",
+    "installments": 9,
+    "installments_value": "20,43",
+    "save": "45,98"
+},
+{
+    "img": "images/tenis-democrata-fan.jpg",
+    "name": "Tênis Democrata Fan",
+    "previous_price": "De: R$ 219,90",
+    "actual_price": "159,92",
+    "installments": 7,
+    "installments_value": "22,84",
+    "save": "59,98"
+}
+]
