@@ -16,8 +16,4 @@ describe('Controller: CarouselCtrl', function () {
       // place here mocked dependencies
     });
   }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(CarouselCtrl.awesomeThings.length).toBe(3);
-  });
 });
